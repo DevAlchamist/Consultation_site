@@ -25,8 +25,8 @@ import {
 } from "@/components/ui/select";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Progress } from "@/components/ui/progress";
+// import { Checkbox } from "@/components/ui/checkbox";
+// import { Progress } from "@/components/ui/progress";
 import { toast } from "sonner";
 
 const steps = [
@@ -417,7 +417,7 @@ export default function EvaluatePage() {
                 </div>
               ))}
             </div>
-            <Progress value={progress} className="h-2" />
+             {/* <Progress value={progress} className="h-2" /> */}
             <div className="text-center mt-2 text-sm text-gray-600">
               Step {currentStep} of 4 ({Math.round(progress)}% complete)
             </div>
@@ -855,7 +855,7 @@ export default function EvaluatePage() {
                         key={country}
                         className="flex items-center space-x-2"
                       >
-                        <Checkbox
+                        {/* <Checkbox
                           id={country}
                           checked={formData.preferredCountries.includes(
                             country
@@ -875,7 +875,7 @@ export default function EvaluatePage() {
                               );
                             }
                           }}
-                        />
+                        /> */}
                         <Label htmlFor={country}>{country}</Label>
                       </div>
                     ))}
