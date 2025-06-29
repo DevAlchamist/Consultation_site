@@ -6,7 +6,7 @@ import { Upload, FileText, Download, Eye, Trash2, CheckCircle, Clock, AlertCircl
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+// import { Progress } from '@/components/ui/progress';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const documents = [
@@ -170,7 +170,7 @@ export default function DocumentsPage() {
                   <span>Overall Progress</span>
                   <span>{completionPercentage}%</span>
                 </div>
-                <Progress value={completionPercentage} className="h-2" />
+                {/* <Progress value={completionPercentage} className="h-2" /> */}
               </div>
             </CardContent>
           </Card>

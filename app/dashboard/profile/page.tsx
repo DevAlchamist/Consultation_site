@@ -10,7 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+// import { Progress } from '@/components/ui/progress';
 
 export default function ProfilePage() {
   const [isEditing, setIsEditing] = useState(false);
@@ -105,7 +105,7 @@ export default function ProfilePage() {
                     <span>Profile Completeness</span>
                     <span>{profileCompleteness}%</span>
                   </div>
-                  <Progress value={profileCompleteness} className="h-2" />
+                  {/* <Progress value={profileCompleteness} className="h-2" /> */}
                 </div>
 
                 <div className="space-y-2 text-sm">

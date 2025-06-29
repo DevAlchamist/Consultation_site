@@ -25,7 +25,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
+// import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -404,7 +404,7 @@ export default function DashboardPage() {
                         <span>Application Progress</span>
                         <span>{app.progress}%</span>
                       </div>
-                      <Progress value={app.progress} className="h-2" />
+                      {/* <Progress value={app.progress} className="h-2" /> */}
                     </div>
 
                     <div className="mb-4">
@@ -594,10 +594,10 @@ export default function DashboardPage() {
                       <span>Profile Completeness</span>
                       <span>{dashboardData.profile.completeness}%</span>
                     </div>
-                    <Progress
+                    {/* <Progress
                       value={dashboardData.profile.completeness}
                       className="h-2"
-                    />
+                    /> */}
                   </div>
 
                   <Button

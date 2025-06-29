@@ -23,7 +23,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
+// import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const applications = [
@@ -278,10 +278,10 @@ export default function ApplicationsPage() {
                             <span>Application Progress</span>
                             <span>{application.progress}%</span>
                           </div>
-                          <Progress
+                          {/* <Progress
                             value={application.progress}
                             className="h-2"
-                          />
+                          /> */}
                         </div>
 
                         {/* Key Info */}
