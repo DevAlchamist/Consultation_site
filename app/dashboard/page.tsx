@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import {
   User,
@@ -16,7 +16,6 @@ import {
   CheckCircle,
   Clock,
   AlertCircle,
-  BarChart,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -29,7 +28,6 @@ import {
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Image from "next/image";
 
 const dashboardData = {
   profile: {
@@ -136,7 +134,7 @@ const dashboardData = {
 };
 
 export default function DashboardPage() {
-  const [activeTab, setActiveTab] = useState("overview");
+  const [activeTab, setActiveTab] = React.useState("overview");
 
   const getStatusIcon = (status: any) => {
     switch (status) {
@@ -249,7 +247,7 @@ export default function DashboardPage() {
                             {stat.value}
                           </p>
                         </div>
-                        <BarChart className={`h-8 w-8 ${stat.color}`} />
+                        <stat.icon className={`h-8 w-8 ${stat.color}`} />
                       </div>
                     </CardContent>
                   </Card>
@@ -406,7 +404,7 @@ export default function DashboardPage() {
                         <span>Application Progress</span>
                         <span>{app.progress}%</span>
                       </div>
-                      {/* <Progress value={app.progress} className="h-2" /> */}
+                      <Progress value={app.progress} className="h-2" />
                     </div>
 
                     <div className="mb-4">
@@ -579,7 +577,7 @@ export default function DashboardPage() {
             <div className="grid lg:grid-cols-3 gap-8">
               <Card className="lg:col-span-1">
                 <CardContent className="p-6 text-center">
-                  <Image
+                  <img
                     src={dashboardData.profile.image}
                     alt={dashboardData.profile.name}
                     className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
@@ -596,10 +594,10 @@ export default function DashboardPage() {
                       <span>Profile Completeness</span>
                       <span>{dashboardData.profile.completeness}%</span>
                     </div>
-                    {/* <Progress
+                    <Progress
                       value={dashboardData.profile.completeness}
                       className="h-2"
-                    /> */}
+                    />
                   </div>
 
                   <Button

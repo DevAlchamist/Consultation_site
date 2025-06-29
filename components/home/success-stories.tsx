@@ -108,6 +108,8 @@ export function SuccessStoriesSection() {
               {/* Student Info */}
               <div className="flex items-center space-x-4 mb-4">
                 <Image
+              width={1200}
+              height={1200}
                   src={story.image}
                   alt={story.name}
                   className="w-12 h-12 rounded-full object-cover"

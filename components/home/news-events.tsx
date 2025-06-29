@@ -110,6 +110,8 @@ export function NewsEventsSection() {
                   >
                     <div className="flex space-x-4">
                       <Image
+              width={1200}
+              height={1200}
                         src={article.image}
                         alt={article.title}
                         className="w-24 h-24 rounded-lg object-cover flex-shrink-0"

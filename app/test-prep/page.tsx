@@ -358,6 +358,8 @@ export default function TestPrepPage() {
 
               <div className="bg-gray-50 p-8 lg:p-12">
                 <Image
+              width={1200}
+              height={1200}
                   src={selectedTest.image}
                   alt={selectedTest.name}
                   className="w-full h-48 object-cover rounded-xl mb-6"
@@ -441,6 +443,8 @@ export default function TestPrepPage() {
                 className="bg-white rounded-2xl p-6 shadow-lg text-center"
               >
                 <Image
+              width={1200}
+              height={1200}
                   src={story.image}
                   alt={story.name}
                   className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"

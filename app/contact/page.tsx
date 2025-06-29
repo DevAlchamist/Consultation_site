@@ -462,6 +462,8 @@ export default function ContactPage() {
                 className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
               >
                 <Image
+              width={1200}
+              height={1200}
                   src={office.image}
                   alt={`${office.city} office`}
                   className="w-full h-48 object-cover"

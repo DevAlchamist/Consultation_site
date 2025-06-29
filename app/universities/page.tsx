@@ -317,6 +317,8 @@ export default function UniversitiesPage() {
               >
                 <div className="relative h-48">
                   <Image
+              width={1200}
+              height={1200}
                     src={university.image}
                     alt={university.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"

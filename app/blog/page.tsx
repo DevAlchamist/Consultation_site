@@ -266,6 +266,8 @@ export default function BlogPage() {
                 >
                   <div className="relative h-48">
                     <Image
+              width={1200}
+              height={1200}
                       src={post.image}
                       alt={post.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -298,6 +300,8 @@ export default function BlogPage() {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
                         <Image
+              width={1200}
+              height={1200}
                           src={post.authorImage}
                           alt={post.author}
                           className="w-8 h-8 rounded-full object-cover"
@@ -347,6 +351,8 @@ export default function BlogPage() {
                   <div className="md:w-1/3">
                     <div className="relative h-48 md:h-full">
                       <Image
+              width={1200}
+              height={1200}
                         src={post.image}
                         alt={post.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -393,6 +399,8 @@ export default function BlogPage() {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-3">
                         <Image
+              width={1200}
+              height={1200}
                           src={post.authorImage}
                           alt={post.author}
                           className="w-8 h-8 rounded-full object-cover"

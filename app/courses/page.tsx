@@ -294,6 +294,8 @@ export default function CoursesPage() {
               >
                 <div className="relative h-48">
                   <Image
+              width={1200}
+              height={1200}
                     src={course.image}
                     alt={course.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"

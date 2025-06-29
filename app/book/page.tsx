@@ -314,6 +314,8 @@ export default function BookPage() {
                     >
                       <div className="text-center mb-4">
                         <Image
+              width={1200}
+              height={1200}
                           src={counselor.image}
                           alt={counselor.name}
                           className="w-20 h-20 rounded-full mx-auto mb-3 object-cover"

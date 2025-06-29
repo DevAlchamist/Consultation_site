@@ -102,6 +102,8 @@ export function TopDestinationsSection() {
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
                 <Image
+              width={1200}
+              height={1200}
                   src={destination.image}
                   alt={destination.country}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"

@@ -365,6 +365,8 @@ export default function EventsPage() {
                   <div className="md:w-1/3">
                     <div className="relative h-64 md:h-full">
                       <Image
+              width={1200}
+              height={1200}
                         src={event.image}
                         alt={event.title}
                         className="w-full h-full object-cover"

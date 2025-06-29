@@ -130,6 +130,8 @@ export function TestimonialsSection() {
                 {/* Student Info */}
                 <div className="flex items-center justify-center space-x-4">
                   <Image
+              width={1200}
+              height={1200}
                     src={testimonials[currentIndex].image}
                     alt={testimonials[currentIndex].name}
                     className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg"
@@ -197,6 +199,8 @@ export function TestimonialsSection() {
               >
                 <div className="flex items-center space-x-3">
                   <Image
+              width={1200}
+              height={1200}
                     src={testimonial.image}
                     alt={testimonial.name}
                     className="w-10 h-10 rounded-full object-cover"

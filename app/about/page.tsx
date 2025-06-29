@@ -124,9 +124,9 @@ export default function AboutPage() {
               About <span className="gradient-text">StudyGlobal</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              For over 15 years, we&apos;ve been transforming dreams into reality by
-              guiding students towards their perfect international education
-              journey.
+              For over 15 years, we&apos;ve been transforming dreams into
+              reality by guiding students towards their perfect international
+              education journey.
             </p>
           </motion.div>
 
@@ -137,6 +137,8 @@ export default function AboutPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <Image
+                width={1200}
+                height={1200}
                 src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="StudyGlobal team"
                 className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
@@ -158,9 +160,9 @@ export default function AboutPage() {
                 into a trusted global network.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Today, we&apos;ve helped over 10,000 students achieve their dreams of
-                studying abroad, with a 98% visa success rate and partnerships
-                with 500+ universities worldwide.
+                Today, we&apos;ve helped over 10,000 students achieve their
+                dreams of studying abroad, with a 98% visa success rate and
+                partnerships with 500+ universities worldwide.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-white/60 rounded-lg">
@@ -343,6 +345,8 @@ export default function AboutPage() {
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300"
               >
                 <Image
+                  width={1200}
+                  height={1200}
                   src={member.image}
                   alt={member.name}
                   className="w-full h-48 object-cover"

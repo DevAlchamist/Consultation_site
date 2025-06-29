@@ -207,6 +207,8 @@ export default function StudyInAustraliaPage() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
+              width={1200}
+              height={1200}
             src="https://images.pexels.com/photos/995764/pexels-photo-995764.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt="Study in Australia"
             className="w-full h-full object-cover"
@@ -393,6 +395,8 @@ export default function StudyInAustraliaPage() {
               >
                 <div className="text-center mb-4">
                   <Image
+              width={1200}
+              height={1200}
                     src={university.logo}
                     alt={university.name}
                     className="w-16 h-16 mx-auto mb-3 rounded-full object-cover"
@@ -684,6 +688,8 @@ export default function StudyInAustraliaPage() {
             >
               <div className="flex items-center space-x-6 mb-6">
                 <Image
+              width={1200}
+              height={1200}
                   src={studentStories[currentStory].image}
                   alt={studentStories[currentStory].name}
                   className="w-20 h-20 rounded-full object-cover"
