@@ -1,65 +1,55 @@
-'use client';
+"use client";
 
-import React from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { motion } from 'framer-motion';
-import { 
-  User, 
-  Upload, 
-  TrendingUp, 
-  Calendar, 
-  Bell, 
-  Bookmark, 
-  FileText, 
+import React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
+import {
+  User,
+  Upload,
+  TrendingUp,
+  Calendar,
+  Bell,
+  Bookmark,
+  FileText,
   CreditCard,
   LogOut,
   Settings,
-  Globe
-} from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+  Globe,
+} from "lucide-react";
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const sidebarItems = [
   {
-    title: 'Overview',
-    href: '/dashboard',
+    title: "Overview",
+    href: "/dashboard",
     icon: TrendingUp,
   },
   {
-    title: 'Profile',
-    href: '/dashboard/profile',
+    title: "Profile",
+    href: "/dashboard/profile",
     icon: User,
   },
   {
-    title: 'Documents',
-    href: '/dashboard/documents',
-    icon: Upload,
-  },
-  {
-    title: 'Sessions',
-    href: '/dashboard/sessions',
+    title: "Sessions",
+    href: "/dashboard/sessions",
     icon: Calendar,
   },
   {
-    title: 'Applications',
-    href: '/dashboard/applications',
+    title: "Applications",
+    href: "/dashboard/applications",
     icon: FileText,
   },
   {
-    title: 'Saved Universities',
-    href: '/dashboard/universities',
+    title: "Saved Universities",
+    href: "/dashboard/universities",
     icon: Bookmark,
   },
   {
-    title: 'Notifications',
-    href: '/dashboard/notifications',
-    icon: Bell,
-  },
-  {
-    title: 'Payments',
-    href: '/dashboard/payments',
+    title: "Payments",
+    href: "/dashboard/payments",
     icon: CreditCard,
   },
 ];
@@ -122,7 +112,10 @@ export function Sidebar() {
             <span className="font-medium">Settings</span>
           </div>
         </Link>
-        <Button variant="ghost" className="w-full justify-start text-gray-600 hover:text-red-600">
+        <Button
+          variant="ghost"
+          className="w-full justify-start text-gray-600 hover:text-red-600"
+        >
           <LogOut className="h-5 w-5 mr-3" />
           Sign Out
         </Button>

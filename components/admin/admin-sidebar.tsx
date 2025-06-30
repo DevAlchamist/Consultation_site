@@ -61,16 +61,6 @@ const adminSidebarItems = [
     icon: Globe,
   },
   {
-    title: "Scholarship Manager",
-    href: "/admin/scholarships",
-    icon: Award,
-  },
-  {
-    title: "Event Manager",
-    href: "/admin/events",
-    icon: Calendar,
-  },
-  {
     title: "Document Review",
     href: "/admin/documents",
     icon: FileText,
@@ -79,11 +69,6 @@ const adminSidebarItems = [
     title: "Payment Tracker",
     href: "/admin/payments",
     icon: CreditCard,
-  },
-  {
-    title: "Promo Codes",
-    href: "/admin/promo-codes",
-    icon: Tag,
   },
   {
     title: "Contact Inbox",
